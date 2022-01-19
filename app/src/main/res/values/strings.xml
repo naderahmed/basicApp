@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">BasicApp</string>
+    <string name="no_app_to_perform_action">No App to perform this action</string>
+    <string name="send_email">Send Email</string>
+</resources>
