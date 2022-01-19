@@ -10,13 +10,13 @@ import androidx.core.content.ContextCompat.startActivity
 
 
 
-fun Context.sendEmail(adress: String?, subject: String?, body: String?){
+fun Context.sendEmail(address: String?, subject: String?, body: String?){
 
     val selectorIntent = Intent(Intent.ACTION_SENDTO)
-    selectorIntent.data = Uri.parse("mailto:")
+    selectorIntent.data = Uri.parse("mailto:$address")
 
     val emailIntent = Intent(Intent.ACTION_SEND)
-    emailIntent.putExtra(Intent.EXTRA_EMAIL, arrayOf(adress))
+    emailIntent.putExtra(Intent.EXTRA_EMAIL, arrayOf(address))
     emailIntent.putExtra(Intent.EXTRA_SUBJECT, subject)
     emailIntent.putExtra(Intent.EXTRA_TEXT, body)
     emailIntent.selector = selectorIntent

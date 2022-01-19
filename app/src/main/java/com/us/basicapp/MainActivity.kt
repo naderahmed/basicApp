@@ -17,7 +17,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         binding.btnEmail.setOnClickListener{
-            sendEmail("","hello world","hello world")
+            sendEmail("naderwashereagain@gmail.com","hello world","hello world")
         }
     }
 }
